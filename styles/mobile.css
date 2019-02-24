@@ -10,6 +10,9 @@
         width: 100%;
         padding: 0;
     }
+    #show2 {
+        display: none;
+    }
     .menu-sub-lu {
         width: 100%;
         position: relative;

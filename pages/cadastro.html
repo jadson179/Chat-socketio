@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="container-form-cadastro">
-        <form class="cadastro-form-cadastro" method="post" >
+        <form class="cadastro-form-cadastro" action="../scripts-php/cadastra.php" method="post" >
                 <legend class="cadastro-legend-cadastro">Cadastro Enigma</legend>
                 <input class="input-form-cadastro" type="text" name="firstname" placeholder="Primeiro Nome" required>
                 <input class="input-form-cadastro" type="text" name="secondname" placeholder="Sobrenome" required><br>
                 <input class="input-form-cadastro" type="text" name="usernsame" placeholder="Nome de usuário" required>
                 <input class="input-form-cadastro" type="tel"  name="telefone" placeholder="Telefone" required><br>
                 <input class="input-form-cadastro" type="email" name="email" placeholder="Informe seu email" required>
-                <input class="input-form-cadastro" type="password" name="senha" placeholder="Informe sua senha" required>
-                <input class ="input-form-cadastro" valor="Enviar" type="submit">
+                <input class="input-form-cadastro" type="password" name="password" placeholder="Informe sua senha" required>
+                <input id="btn-env-cadastro" class ="input-form-cadastro" valor="Enviar" type="submit">
         </form>
     </div>
 </body> 

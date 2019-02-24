@@ -38,6 +38,10 @@ body {
     height: 10%;
     border: 1px solid rgba(114, 114, 114, 0.3);
 }
+#btn-env-cadastro:hover{
+    background-color: rgba(202, 202, 202, 0.411);
+    cursor: pointer;
+}
 @media only screen and (max-width: 900px){
     .input-form-cadastro {
         width: 90%;
