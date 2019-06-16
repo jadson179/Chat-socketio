@@ -91,10 +91,11 @@ function getCookie(cname) {
 function checkcookie(){
     /*check is exist or not */
     let cookie = getCookie();
-    if (cookie != "" && cookie != null){
-
+    if (cookie != "" && cookie != 'null' && cookie != Number() ){
+        console.log('%cUNISEC 🤨 ','font: 5em roboto; color:rgb(32, 0, 138);');
+        console.log('%cEssa solução foi desenvolvida com o proposito de melhorar o gerenciamento de chamados de uma central de suporte, sendo assim, a solução irá gerar uma facilidade no acesso a central de suporte por meio de um link dinâmico que é gerenciado por um script, o script identifica qual o (CEP, LATIDUTE E LONGITUDE) em que o usuário está, baseado nessas informações alteramos a url para o projeto na central de suporte que corresponde ao cliente da central','font: 13px roboto; color:rgb(0,0,0);');
     }else {
-        let cname = prompt("Inform seu nome?");
+        let cname = prompt("Informe seu nome?");
         let exdays = 90;
 
         setCookie(cname, exdays);

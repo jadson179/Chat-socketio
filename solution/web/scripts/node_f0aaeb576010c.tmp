@@ -1,0 +1,11 @@
+var http = require('http')
+var port = 8080;
+var ip = 'localhost';
+
+const server = http.createServer((request, response)=>{
+
+})
+
+server.listen(port,ip, ()=>{
+
+})
