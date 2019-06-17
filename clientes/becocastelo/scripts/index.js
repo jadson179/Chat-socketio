@@ -1,4 +1,3 @@
-
 const url = 'http://ip-api.com/json/';
 let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function (){
@@ -17,6 +16,11 @@ addEventListener('load', checkcookie);
 addEventListener('load', showMsg);
 
 function setUrlButton(cep, lat, lon){
+    let location =  navigator.geolocation.getCurrentPosition((position)=>{
+        console.log(position)
+    },(error)=>{
+        console.log(error)
+    });
     let fildCEP = cep;
     let fildLAT = lat;
     let fildLON = lon;
@@ -101,5 +105,4 @@ function checkcookie(){
         setCookie(cname, exdays);
         showMsg();
     }
-
 }
