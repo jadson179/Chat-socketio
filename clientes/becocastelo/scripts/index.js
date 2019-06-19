@@ -17,16 +17,16 @@ function setUrlButton(lat, lon){
     let fildLON = lon;
     console.log('latitude'+lat)
     console.log('logitude'+lon)
-    var url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/10",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/13",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/6",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/27",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/11",
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/29",
-                "https://suporte.unisec.com.br/servicedesk/customer/portal/15"]
+    var url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // BECO-CASTELO
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/10", // Central de Suporte A&A Philippi Business Center
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/13", // Hamilton Araujo Top Residence 
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/6",  // Felipe Antonio Lohn 
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/27", // Althoff Prime Residence
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/11", // Centro Executivo Imperatriz 
+               "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
+                "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
 
-    if(-27.586966 >= fildLAT + 0.000151 && -48.577899 >= fildLON + 0.000151){
+    if(-27.586966 <= (fildLAT + 0.000500) && -48.577899 <= (fildLON + 0.000500)){
         //BECOCASTELO
         let button = document.getElementsByClassName('container-bottom')[0];
         button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
