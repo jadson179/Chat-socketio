@@ -8,7 +8,7 @@ navigator.geolocation.getCurrentPosition((position=>{
     let lon = position.coords.longitude;
     setUrlButton(lat, lon);
 }),error=>{
-    console.log('USER NOT PERMITION LOCATION')
+    console.log('USER NOT PERMISSION LOCATION')
 })
 
 function setUrlButton(lat, lon){
