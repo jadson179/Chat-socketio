@@ -1,29 +1,22 @@
-const url = 'http://ip-api.com/json/';
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function (){
-    if(this.readyState == 4 && this.status == 200 ){
-            let responseJson = JSON.parse(this.responseText);
-            let cep = responseJson.zip;
-            let lat = responseJson.lat;
-            let lon = responseJson.lon;
-            setUrlButton(cep, lat, lon);
-        }
-    }
-xhttp.open('GET', url, true);
-xhttp.send();
+
 
 addEventListener('load', checkcookie);
 addEventListener('load', showMsg);
 
-function setUrlButton(cep, lat, lon){
-    let location =  navigator.geolocation.getCurrentPosition((position)=>{
-        console.log(position)
-    },(error)=>{
-        console.log(error)
-    });
-    let fildCEP = cep;
+navigator.geolocation.getCurrentPosition((position=>{
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    setUrlButton(lat, lon);
+}),error=>{
+    console.log('USER NOT PERMITION LOCATION')
+})
+
+function setUrlButton(lat, lon){
+
     let fildLAT = lat;
     let fildLON = lon;
+    console.log('latitude'+lat)
+    console.log('logitude'+lon)
     var url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",
                "https://suporte.unisec.com.br/servicedesk/customer/portal/10",
                "https://suporte.unisec.com.br/servicedesk/customer/portal/13",
@@ -33,30 +26,10 @@ function setUrlButton(cep, lat, lon){
                "https://suporte.unisec.com.br/servicedesk/customer/portal/29",
                 "https://suporte.unisec.com.br/servicedesk/customer/portal/15"]
 
-    if(fildCEP == 88075 &&  fildLAT == -27.5869591 && fildLON == -48.5779027){
+    if(-27.586966 >= fildLAT + 0.000151 && -48.577899 >= fildLON + 0.000151){
+        //BECOCASTELO
         let button = document.getElementsByClassName('container-bottom')[0];
         button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
-    }else if (fildCEP == 88075 &&  fildLAT == -27.5873508 && fildLON == -48.5775496){ 
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[1]}>ABRIR CHAMADO</a></label>`;
-    }else if(fildCEP == 88075 &&  fildLAT == -27.5874221 && fildLON == -48.5775251){
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[2]}>ABRIR CHAMADO</a></label>`;
-    }else if(fildCEP == 88070 &&  fildLAT == -27.5848104 && fildLON == -48.5840835){
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[3]}>ABRIR CHAMADO</a></label>`;
-    }else if(fildCEP == 88015 &&  fildLAT == -27.5914533 && fildLON == -48.5586996){
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[4]}>ABRIR CHAMADO</a></label>`;
-    }else if(fildCEP == 88075 &&  fildLAT == -27.5839386 && fildLON == -48.5838017){
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[5]}>ABRIR CHAMADO</a></label>`;
-    }else if(fildCEP == 88075 &&  fildLAT == -27.5836139 && fildLON == -48.5829051){
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[6]}>ABRIR CHAMADO</a></label>`;
-    }else {
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[7]}>ABRIR CHAMADO</a></label>`;
     }
 }
 function createObjectData() {
@@ -97,7 +70,7 @@ function checkcookie(){
     let cookie = getCookie();
     if (cookie != "" && cookie != 'null' && cookie != Number() ){
         console.log('%cUNISEC 🤨 ','font: 5em roboto; color:rgb(32, 0, 138);');
-        console.log('%cEssa solução foi desenvolvida com o proposito de melhorar o gerenciamento de chamados de uma central de suporte, sendo assim, a solução irá gerar uma facilidade no acesso a central de suporte por meio de um link dinâmico que é gerenciado por um script, o script identifica qual o (CEP, LATIDUTE E LONGITUDE) em que o usuário está, baseado nessas informações alteramos a url para o projeto na central de suporte que corresponde ao cliente da central','font: 13px roboto; color:rgb(0,0,0);');
+        console.log('%cEssa solução foi desenvolvida com o proposito de melhorar o gerenciamento de chamados de uma central de suporte, sendo assim, a solução irá gerar uma facilidade no acesso a central de suporte por meio de um link dinâmico que é gerenciado por um script, o script identifica qual o (LATIDUTE E LONGITUDE) em que o usuário está, baseado nessas informações alteramos a url para o projeto na central de suporte que corresponde ao cliente da central','font: 13px roboto; color:rgb(0,0,0);');
     }else {
         let cname = prompt("Informe seu nome?");
         let exdays = 90;
