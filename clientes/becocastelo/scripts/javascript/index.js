@@ -1,5 +1,3 @@
-
-
 addEventListener('load', checkcookie);
 addEventListener('load', showMsg);
 
@@ -26,19 +24,11 @@ function setUrlButton(lat, lon){
                "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
                 "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
 
-    if(-27.586966 <= (fildLAT + 0.000700) && -48.577899 <= (fildLON + 0.000700)){
+    if(){
         //BECOCASTELO
         let button = document.getElementsByClassName('container-bottom')[0];
         button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
-    }else if(-27.587353 <= (fildLAT + 0.000700) && -48.577557 <= (fildLON + 0.000700)){
-        //BECOCASTELO
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[1]}>ABRIR CHAMADO</a></label>`;
-    }else if(-27.587424 <= (fildLAT + 0.000700) && -48.577525 <= (fildLON + 0.000700)){
-        //BECOCASTELO
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[2]}>ABRIR CHAMADO</a></label>`;
-    } 
+    }
 }
 function createObjectData() {
     let objData = new Date();

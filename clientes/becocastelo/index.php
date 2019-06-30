@@ -1,3 +1,4 @@
+<?php require('infoClients')?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">  
     <title>BECO-CASTELO</title>
     <link rel="icon" href="https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png">
-    <script src="scripts/index.js"></script>
+    <script src="scripts/javascript/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>

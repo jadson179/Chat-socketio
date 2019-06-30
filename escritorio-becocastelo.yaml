@@ -1,0 +1,8 @@
+id: applications
+name: nameAplication 
+version: 
+home: 
+installMethod: Custom
+installers:
+- location: http://www.receita.fazenda.gov.br/publico/programas/receitanet/Receitanet-1.17.exe
+- location: https://downloads.slack-edge.com/releases_x64/SlackSetup.exe
