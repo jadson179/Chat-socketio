@@ -1,35 +1,5 @@
 addEventListener('load', checkcookie);
 addEventListener('load', showMsg);
-
-navigator.geolocation.getCurrentPosition((position=>{
-    let lat = position.coords.latitude;
-    let lon = position.coords.longitude;
-    setUrlButton(lat, lon);
-}),error=>{
-    console.log('USER NOT PERMISSION LOCATION')
-})
-
-function setUrlButton(lat, lon){
-
-    let fildLAT = lat;
-    let fildLON = lon;
-    console.log('latitude'+lat)
-    console.log('logitude'+lon)
-    var url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // BECO-CASTELO
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/10", // A&A Philippi Business Center -27.587353, -48.577557
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/13", // Hamilton Araujo Top Residence -27.587424, -48.577525
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/6",  // Felipe Antonio Lohn 
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/27", // Althoff Prime Residence
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/11", // Centro Executivo Imperatriz 
-               "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
-                "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
-
-    if(){
-        //BECOCASTELO
-        let button = document.getElementsByClassName('container-bottom')[0];
-        button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
-    }
-}
 function createObjectData() {
     let objData = new Date();
     let hours = objData.getHours();   
@@ -55,7 +25,7 @@ function setCookie(cname, exdays) {
     /* create cookie*/
     let objData = new Date();
     objData.setTime(objData.getTime() + (exdays*24*60*60*1000));
-    var expires = objData.toUTCString();
+    let expires = objData.toUTCString();
     document.cookie = `name=${cname};expires=tru,${expires}`; 
 }
 function getCookie(cname) {
