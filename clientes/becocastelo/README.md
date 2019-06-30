@@ -11,3 +11,4 @@ central.
 ## Customização
 
 Caso deseja utilizar para um uso fora do cenário informado acima, existe um função chamada "setUrlButton" PATH="Enigma/clientes/becocastelo/index.php" e nela se econtra toda a regra de negócio que altera a URL baseada na informação do IP da máquina cliente.
+02852f9cfb905f01f49c592d581f4119f84a61bd3c3b83c592ce5c6a148383a
