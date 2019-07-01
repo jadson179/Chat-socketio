@@ -44,6 +44,10 @@
             // Hamilton Araujo Top Residence
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[2]}>ABRIR CHAMADO</a></label>`;
+        }else if(parseInt(convertIpArray) == 20){
+            // Felipe Antonio Lohn 
+            let button = document.getElementsByClassName('container-bottom')[0];
+            button.innerHTML = `<label><a href=${url[3]}>ABRIR CHAMADO</a></label>`;
         }else {
             //Suporte
             let button = document.getElementsByClassName('container-bottom')[0];

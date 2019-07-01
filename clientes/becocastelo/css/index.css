@@ -4,13 +4,13 @@
 }
 html,body {
     background-color: #fff;
-    height: 110%;   
+    height: 103%;   
     font-family: 'Varela Round', sans-serif;
 }
 .title {
     width: 100%;
     height: 50px;
-    background-color: #a5a5a516;
+    background-color: #0707072f;
     box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.102);
     text-align: left;
     position: relative;
@@ -27,7 +27,7 @@ html,body {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.335);
     top: 20%;
     width: 70%;
-    height: 450px;
+    height: 470px;
 }
 .top-container {
     position: relative;
@@ -81,7 +81,7 @@ html,body {
     bottom: 0px;
     left: 0;
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.53);
     color: #fff;
@@ -96,8 +96,8 @@ html,body {
     align-content: center;
 }
 .container-bottom label {
-    width: 200px;
-    height: 40px;
+    width: 220px;
+    height: 45px;
     background-color: rgba(107, 103, 103, 0.353);
     text-align: center;
     line-height: 40px;
