@@ -61,7 +61,7 @@
     <section class="container">
         <header class="top-container">
                 <img class="header-content" src="https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png" alt="beco-castelo"> 
-                <div id="container-title" class="header-content"> CENTRAL DE SUPORTE</div>
+                <div id="container-title" class="header-content"><strong>CENTRAL DE SUPORTE</strong></div>
         </header>
         <div class="content-container">
             <ul> <strong>Empresa reponsável</strong> 

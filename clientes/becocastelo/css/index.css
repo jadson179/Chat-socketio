@@ -4,7 +4,7 @@
 }
 html,body {
     background-color: #fff;
-    height: 100%;   
+    height: 110%;   
     font-family: 'Varela Round', sans-serif;
 }
 .title {
@@ -79,6 +79,7 @@ html,body {
 .footer {
     position: fixed;
     bottom: 0px;
+    left: 0;
     width: 100%;
     font-size: 12px;
     text-align: center;
