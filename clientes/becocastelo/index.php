@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Essa solução foi desenvolvida com o proposito de melhorar o gerenciamento de chamados de uma central de suporte, sendo assim, a solução irá gerar uma facilidade no acesso a central de suporte por meio de um link dinâmico que é gerenciado por um script, o script identifica qual o (CEP, LATIDUTE E LONGITUDE) em que o usuário está, basedo nessas informações alteramos a url para o projeto na central de suporte que corresponde ao cliente da central."/>
-    <meta name="author" content="Jadson Santos"/>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">  
     <title>BECO-CASTELO</title>
     <link rel="icon" href="https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png">
     <script src="scripts/javascript/index.js"></script>
-    <script>
+    <script asyc>
         addEventListener('load', setUrlButton)
         function setUrlButton(){
         let getIpUser = '<?php require('./scripts/php/infoClients.php')?>';
-        let convertIpArray = getIpUser.split('.')[1]; 
-        let url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // BECO-CASTELO
+        let convertIpArray = getIpUser.split('.')[1]; //Pego o segundo octeto da rede
+	console.log(convertIpArray);
+	let url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // Beco-castelo
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/10", // A&A Philippi Business Center
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/13", // Hamilton Araujo Top Residence
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/6",  // Felipe Antonio Lohn 
@@ -24,36 +23,31 @@
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
 
-        if(parseInt(convertIpArray) == 16){
+        if(convertIpArray == '168'){
             //BECOCASTELO
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
-        }else if(parseInt(convertIpArray) == 19){
+        }else if(parseInt(convertIpArray) == '19'){
             // Centro Executivo Imperatriz 
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[5]}>ABRIR CHAMADO</a></label>`;
-        }else if(parseInt(convertIpArray) == 18){
+        }else if(convertIpArray == '18'){
             // Maria Esther
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[6]}>ABRIR CHAMADO</a></label>`;
-        }else if(parseInt(convertIpArray) == 21){
+        }else if(convertIpArray == '21'){
             // A&A Philippi Business Center
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[1]}>ABRIR CHAMADO</a></label>`;
-        }if(parseInt(convertIpArray) == 22){
+        }if(convertIpArray == '22'){
             // Hamilton Araujo Top Residence
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[2]}>ABRIR CHAMADO</a></label>`;
-        }else if(parseInt(convertIpArray) == 20){
+        }else if(convertIpArray == '20'){
             // Felipe Antonio Lohn 
             let button = document.getElementsByClassName('container-bottom')[0];
             button.innerHTML = `<label><a href=${url[3]}>ABRIR CHAMADO</a></label>`;
-        }else {
-            //Suporte
-            let button = document.getElementsByClassName('container-bottom')[0];
-            button.innerHTML = `<label><a href=${url[7]}>ABRIR CHAMADO</a></label>`;
         }
-    
     }
     </script>
     <link rel="stylesheet" href="css/index.css">

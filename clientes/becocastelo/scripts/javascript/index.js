@@ -1,6 +1,7 @@
 addEventListener('load', checkcookie);
 addEventListener('load', showMsg);
 function createObjectData() {
+    /*Pega o horário local da máquina do usuário */
     let objData = new Date();
     let hours = objData.getHours();   
     let min = objData.getMinutes();
@@ -12,12 +13,11 @@ function showMsg() {
     let getElementTitle = document.getElementsByClassName('title')[0];
     let hours = createObjectData();
     
-    if( hours <= '12:0') {
+    if( paserInt(hours) < 12) {
         getElementTitle.innerHTML = `<h3>Bom dia, ${getCookie()}</h3>`;
-    }else if(hours > '12:1' && hours < '18:0'){
-
+    }else if(paserInt(hours) > 12 && paserInt(hours) <= 18 ){
         getElementTitle.innerHTML = `<h3>Boa tarde, ${getCookie()}</h3>`;
-    } else if(hours > '18:1') {
+    } else if(paserInt(hours)> 18) {
         getElementTitle.innerHTML = `<h3>Boa noite, ${getCookie()}</h3>`;
     }
 }
@@ -34,11 +34,11 @@ function getCookie(cname) {
         return cname = name ;
 }
 function checkcookie(){
-    /*check is exist or not */
+    /*checa se existe um cookie*/
     let cookie = getCookie();
     if (cookie != "" && cookie != 'null' && cookie != Number() ){
         console.log('%cUNISEC 🤨 ','font: 5em roboto; color:rgb(32, 0, 138);');
-        console.log('%cEssa solução foi desenvolvida com o proposito de melhorar \
+        console.log('%cEssa solução foi desenvolvida com o proposito de melhorar\
         o gerenciamento de chamados de uma central de suporte,sendo assim, a solução\
         irá gerar uma facilidade no acesso a central de suporte por meio de um link\
         dinâmico que é gerenciado por um script, o script identifica qual o IP em que\
