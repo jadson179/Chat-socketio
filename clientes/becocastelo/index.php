@@ -13,7 +13,7 @@
         function setUrlButton(){
         let getIpUser = '<?php require('./scripts/php/infoClients.php')?>';
         let convertIpArray = getIpUser.split('.')[1]; //Pego o segundo octeto da rede
-	console.log(convertIpArray);
+	console.log(typeof(convertIpArray));
 	let url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // Beco-castelo
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/10", // A&A Philippi Business Center
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/13", // Hamilton Araujo Top Residence
@@ -23,29 +23,35 @@
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
 
-        if(convertIpArray == '168'){
+        if(convertIpArray == '0'){
             //BECOCASTELO
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png';
             button.innerHTML = `<label><a href=${url[0]}>ABRIR CHAMADO</a></label>`;
         }else if(parseInt(convertIpArray) == '19'){
             // Centro Executivo Imperatriz 
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-cei.png';
             button.innerHTML = `<label><a href=${url[5]}>ABRIR CHAMADO</a></label>`;
         }else if(convertIpArray == '18'){
             // Maria Esther
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-maria.png';
             button.innerHTML = `<label><a href=${url[6]}>ABRIR CHAMADO</a></label>`;
         }else if(convertIpArray == '21'){
             // A&A Philippi Business Center
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-a&a.png';
             button.innerHTML = `<label><a href=${url[1]}>ABRIR CHAMADO</a></label>`;
         }if(convertIpArray == '22'){
             // Hamilton Araujo Top Residence
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-hamilton.png';
             button.innerHTML = `<label><a href=${url[2]}>ABRIR CHAMADO</a></label>`;
         }else if(convertIpArray == '20'){
             // Felipe Antonio Lohn 
             let button = document.getElementsByClassName('container-bottom')[0];
+            document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-felipe-lohn.png';
             button.innerHTML = `<label><a href=${url[3]}>ABRIR CHAMADO</a></label>`;
         }
     }
@@ -58,7 +64,7 @@
     </header>
     <section class="container">
         <header class="top-container">
-                <img class="header-content" src="https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png" alt="beco-castelo"> 
+                <img class="header-content" src="" alt="imagem do empreendimento" title="imagem do empreendimento"> 
                 <div id="container-title" class="header-content"><strong>CENTRAL DE SUPORTE</strong></div>
         </header>
         <div class="content-container">

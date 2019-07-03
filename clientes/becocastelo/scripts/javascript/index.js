@@ -5,7 +5,10 @@ function createObjectData() {
     let objData = new Date();
     let hours = objData.getHours();   
     let min = objData.getMinutes();
-    let actualHour =  `${hours}:${min}`;
+    let actualHour= {
+        "hora": hours,
+        "min": min
+    }
     return actualHour;
 }
 function showMsg() {
@@ -13,11 +16,11 @@ function showMsg() {
     let getElementTitle = document.getElementsByClassName('title')[0];
     let hours = createObjectData();
     
-    if( paserInt(hours) < 12) {
+    if(hours.hora < 12) {
         getElementTitle.innerHTML = `<h3>Bom dia, ${getCookie()}</h3>`;
-    }else if(paserInt(hours) > 12 && paserInt(hours) <= 18 ){
+    }else if(hours.hora > 12 && hours.hora <= 18 ){
         getElementTitle.innerHTML = `<h3>Boa tarde, ${getCookie()}</h3>`;
-    } else if(paserInt(hours)> 18) {
+    } else if(hours.hora > 18) {
         getElementTitle.innerHTML = `<h3>Boa noite, ${getCookie()}</h3>`;
     }
 }
