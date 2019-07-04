@@ -13,7 +13,6 @@
         function setUrlButton(){
         let getIpUser = '<?php require('./scripts/php/infoClients.php')?>';
         let convertIpArray = getIpUser.split('.')[1]; //Pego o segundo octeto da rede
-	console.log(typeof(convertIpArray));
 	let url = ["https://suporte.unisec.com.br/servicedesk/customer/portal/7",  // Beco-castelo
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/10", // A&A Philippi Business Center
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/13", // Hamilton Araujo Top Residence
