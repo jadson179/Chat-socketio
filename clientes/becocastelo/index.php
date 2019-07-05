@@ -8,7 +8,17 @@
     <title>BECO-CASTELO</title>
     <link rel="icon" href="https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png">
     <script src="scripts/javascript/index.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js">
+    </script>
     <script asyc>
+        jQuery.support.cors = true;
+    $.ajax ({
+        url: 'http://0.0.0.0/dashboard/Enigma/clientes/becocastelo/json/network.json',
+        datatype: "json",
+        success: function (e) {
+           const json =  JSON.parse(e)
+            console.log(json)
+        }})
         addEventListener('load', setUrlButton)
         function setUrlButton(){
         let getIpUser = '<?php require('./scripts/php/infoClients.php')?>';
@@ -22,7 +32,7 @@
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/29", // Maria Esther
                   "https://suporte.unisec.com.br/servicedesk/customer/portal/15"] // Suporte
 
-        if(convertIpArray == '0'){
+        if(convertIpArray == '16'){
             //BECOCASTELO
             let button = document.getElementsByClassName('container-bottom')[0];
             document.getElementsByClassName('header-content')[0].src = 'https://imgs.unisec.com.br/becocastelo/icon-becocastelo.png';
