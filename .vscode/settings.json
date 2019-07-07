@@ -1,0 +1,13 @@
+{
+    "files.autoSave": "onWindowChange",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.enabled": true,
+    "python.autoComplete.addBrackets": true,
+    "python.testing.pytestArgs": [
+        "language"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}
