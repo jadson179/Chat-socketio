@@ -1,12 +1,11 @@
 <?php 
     class Clients {
+       public $mainIp = '';
        public function getIp(){
-        $mainIp = '';
 		if (getenv('REMOTE_ADDR'))
             $mainIp = getenv('REMOTE_ADDR');
-            
-		return $mainIp;
+        return $mainIp;
             }
-        }
-    echo Clients::getIp()
+       }
+       echo Clients::getIp()
 ?>

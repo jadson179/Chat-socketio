@@ -7,8 +7,38 @@ central.
 
  - [PHP 7.0 ou Superior](https://www.php.net/downloads.php)
  - [Apache 1.9.3 ou Superior](https://projects.apache.org/releases.html)
+   ou
+ - [XAMPP](https://www.apachefriends.org/pt_br/download_success.html)
 
-## Customização
 
-Caso deseja utilizar para um uso fora do cenário informado acima, existe uma função chamada "setUrlButton" PATH="Enigma/clientes/becocastelo/index.php" e nela se encontra toda a regra de negócio que altera a URL baseada na informação do IP da máquina cliente.
+ ## Instalação do XAMPP 
 
+ - Ubuntu
+ - Debian
+ - Mint 
+
+`Website`: [xampp](https://www.apachefriends.org/pt_br/index.html)
+
+- 1) Iniciado a instalação:
+
+[![asciicast](https://asciinema.org/a/256061.svg)](https://asciinema.org/a/256061)
+
+- 2) Converter o arquivo em executável
+
+[![asciicast](https://asciinema.org/a/256066.svg)](https://asciinema.org/a/256066)
+
+- 3) execute o arquivo 
+
+[![asciicast](https://asciinema.org/a/256067.svg)](https://asciinema.org/a/256067)
+
+- 4) screenshots 
+
+- 5) mova o repositório ou copie para /opt/lamp/htdocs/dashboard/
+
+[![asciicast](https://asciinema.org/a/256068.svg)](https://asciinema.org/a/256068)
+
+- 6) Inicie o XAMPP
+
+[![asciicast](https://asciinema.org/a/256069.svg)](https://asciinema.org/a/256069)
+
+- 7) Acesso a url do projeto [localhost](http://0.0.0.0/dashboard/Enigma/clientes/becocastelo/index.php)
