@@ -55,7 +55,7 @@ Vamos visualizar o arquivo que possui essas informações:
 
 ### Definição do octeto
   
-Algo muito importante deverá ser definido agora, pois será a lógica necessária para que quando o usuário acessar a url do página `index.php` Será analisado o segundo octeto do segmento de rede que a máquina cliente se encontra, com base nessa informação definiremos dinâmicamente como a aplicação irá alterar o conteúdo.
+Algo muito importante deverá ser definido agora, pois será a lógica necessária para que quando o usuário acessar a url do página `index.php` será analisado o segundo octeto do segmento de rede que a máquina cliente se encontra, com base nessa informação definiremos dinâmicamente como a aplicação irá alterar o conteúdo.
 
 Para entendimento, vamos monstar um cenário hipotético.
 
@@ -88,7 +88,7 @@ Vamos simular o objeto a ser alterado e como acessar as informações de seu int
 ```javascript
   const url = { //Nome do objeto é url, const somente é um tipo atribuição que diz que o conteúdo da variável não pode ser alterado
             central: { //Propriedade central que em seu corpo possui as url dos projetos da central de suporte
-                "becocastelo":"https://suporte.unisec.com.br/servicedesk/customer/portal/7", // Nome da chave e seu valor separador por "chave":"valor"
+                "becocastelo":"https://suporte.unisec.com.br/servicedesk/customer/portal/7", // Nome da chave e seu valor separados por "chave":"valor"
                 "aeaPhilippi":"https://suporte.unisec.com.br/servicedesk/customer/portal/10",
                 "hamilton":"https://suporte.unisec.com.br/servicedesk/customer/portal/13", 
                 "felipe":"https://suporte.unisec.com.br/servicedesk/customer/portal/6", 
