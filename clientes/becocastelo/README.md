@@ -21,26 +21,26 @@ central.
 
 ### Iniciado a instalação:
 
-[![asciicast](https://asciinema.org/a/256061.svg)](https://asciinema.org/a/256061)
+<a href="https://asciinema.org/a/256061"><img src="https://asciinema.org/a/256061.svg" width="400px" height="300px"></a>
 
 
 ### Converter o arquivo em executável
 
-[![asciicast](https://asciinema.org/a/256066.svg)](https://asciinema.org/a/256066)
+<a href="https://asciinema.org/a/256066"><img src="https://asciinema.org/a/256066.svg" width="400px" height="300px"></a>
 
 ## Execute o arquivo 
 
-[![asciicast](https://asciinema.org/a/256067.svg)](https://asciinema.org/a/256067)
+<a href="https://asciinema.org/a/256067"><img src="https://asciinema.org/a/256067.svg" width="400px" height="300px"></a>
 
 ### Screenshots 
 
 ### Mova o repositório ou copie para /opt/lamp/htdocs/dashboard/
 
-[![asciicast](https://asciinema.org/a/256068.svg)](https://asciinema.org/a/256068)
+<a href="https://asciinema.org/a/256068"><img src="https://asciinema.org/a/256068.svg" width="400px" height="300px"></a>
 
 ### Inicie o XAMPP
 
-[![asciicast](https://asciinema.org/a/256069.svg)](https://asciinema.org/a/256069)
+<a href="https://asciinema.org/a/256069"><img src="https://asciinema.org/a/256069.svg" width="400px" height="300px"></a>
 
 ### Acesso a url do projeto [localhost](http://0.0.0.0/dashboard/Enigma/clientes/becocastelo/index.php)
 
@@ -51,7 +51,7 @@ Havéra um arquivo no `PATH="/Enigma/clientes/becocastelo/scripts/javascript/ind
 
 Vamos visualizar o arquivo que possui essas informações: 
 
-[![asciicast](https://asciinema.org/a/256189.svg)](https://asciinema.org/a/256189)
+<a href="https://asciinema.org/a/256189"><img src="https://asciinema.org/a/256189.svg" width="400px" height="300px"></a>
 
 ### Definição do octeto
   
@@ -66,7 +66,7 @@ Cenánario Segundo Octeto da Rede por Array: Tenho um IP `172.10.0.0` que foi co
 
 Vamos lá nosso arquivo `index.js` e identificar este cara:
 
-[![asciicast](https://asciinema.org/a/256190.svg)](https://asciinema.org/a/256190)
+<a href="https://asciinema.org/a/256190"><img src="https://asciinema.org/a/256190.svg" width="400px" height="300px"></a>
 
 
 **obs**: Para saber qual é o segundo octeto, pegue um IP qualquer e separe cada decimal da rede, vamos usar o `172.10.0.0` o primeiro octeto é `172`, segundo octeto `10`, terceiro octeto `0`, quarto octeto `0`. 
