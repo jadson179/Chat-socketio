@@ -24,6 +24,11 @@
 
 `npm install -y`
 
+
+- Inicie o servidor
+
+`node index.js`
+
 - Acesse http://0.0.0.0:3000 
 
 
