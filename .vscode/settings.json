@@ -1,5 +1,6 @@
 {
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true,
@@ -9,5 +10,6 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+
 }
