@@ -1,37 +1,39 @@
-# CHAT EM TEMPO REAL
+Node JS Chat
+============
 
-## Tecnologias usadas
+[![GitHub Stars](https://img.shields.io/badge/demo-online-green)]() [![GitHub Stars](https://img.shields.io/badge/version-1.0.0-0a8c65)]() [![GitHub Stars](https://img.shields.io/badge/issues-0open-690a91)](https://github.com/jadson179/CHAT-SOCKET-IO/issues)
+ 
 
-- Nodejs
-- Express
-- Socket.io
-- git
+ ![Chat Preview](imgs/home.png)
 
-## Intalação 
+--- 
+## Pague me um Café 
 
-### Linux
+ <a style="position: relative; top: 50px; float: right;" href="https://www.buymeacoffee.com/Knkra0y" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-
-- Clone o repositório
-
-`git clone https://github.com/jadson179/Chat-socketio.git`
-
-- Entre na raiz do projeto
-
-`cd Chat-socketio`
-
-- Instale as dependências 
-
-`npm install -y`
+<img width="100" src="imgs/coffee-cup.svg">
 
 
-- Inicie o servidor
+Se você usa este projeto, e aprendeu algo com ele ou simplesmente gostou dele, considere apoiá-lo comprando um café para mim, para que eu possa dedicar mais tempo a projetos de código aberto como este 😍.
 
-`node index.js`
+---
 
-- Acesse http://0.0.0.0:3000 
+Funcionalidades
+===
 
+- Suporte a emojis
 
-## Contriuidor 
+Configuração
+====
 
-[Jadson Santos](https://github.com/jadson179)
+Clone este respositório para usar em seu desktop e rode o comando `npm install` para instalar todas as dependencias do projeto.
+
+Para Usar
+===
+Depois que você clonou este repositório para seu desktop, vá para o  diretório raiz do projeto e rode o comando `npm start` e acesse [http://0.0.0.0:3000](http://0.0.0.0:3000)
+
+Licença
+===
+> Para você saber mais sobre a licença, clique [aqui](https://github.com/jadson179CHAT-SOCKET-IO/master/LICENSE)
+
+Este projeto é licenciado pelos os termos da licença MIT .
