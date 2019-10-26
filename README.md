@@ -6,7 +6,18 @@ Node JS Chat
 
  ![Chat Preview](imgs/home.png)
 
---- 
+---
+
+Requisitos
+===
+
+[`node`](https://nodejs.org/en/)
+
+[`npm`](https://www.npmjs.com/get-npm) ou [`yarn`](https://yarnpkg.com/pt-BR/docs/install#debian-stable)
+
+
+
+
 ## Pague me um Café 
 
  <a style="position: relative; top: 50px; float: right;" href="https://www.buymeacoffee.com/Knkra0y" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
