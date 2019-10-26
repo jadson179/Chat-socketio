@@ -36,4 +36,4 @@ Licença
 ===
 > Para você saber mais sobre a licença, clique [aqui](https://github.com/jadson179CHAT-SOCKET-IO/blob/master/LICENSE)
 
-Este projeto é licenciado pelos os termos da licença MIT .
+Este projeto é licenciado pelos termos da licença MIT .
