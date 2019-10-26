@@ -34,6 +34,6 @@ Depois que você clonou este repositório para seu desktop, vá para o  diretór
 
 Licença
 ===
-> Para você saber mais sobre a licença, clique [aqui](https://github.com/jadson179CHAT-SOCKET-IO/master/LICENSE)
+> Para você saber mais sobre a licença, clique [aqui](https://github.com/jadson179CHAT-SOCKET-IO/blob/master/LICENSE)
 
 Este projeto é licenciado pelos os termos da licença MIT .
