@@ -33,6 +33,7 @@ Funcionalidades
 ===
 
 - Suporte a emojis
+- Envio de mensagens de texto
 
 Configuração
 ====
