@@ -1,7 +1,7 @@
 Node JS Chat
 ============
 
-[![GitHub Stars](https://img.shields.io/badge/demo-online-green)]() [![GitHub Stars](https://img.shields.io/badge/version-1.0.0-0a8c65)]() [![GitHub Stars](https://img.shields.io/badge/issues-0open-690a91)](https://github.com/jadson179/CHAT-SOCKET-IO/issues)
+[![GitHub Stars](https://img.shields.io/badge/demo-online-green)](https://jadson179.github.io/CHAT-SOCKET-IO/public/index.html) [![GitHub Stars](https://img.shields.io/badge/version-1.0.0-0a8c65)]() [![GitHub Stars](https://img.shields.io/badge/issues-0open-690a91)](https://github.com/jadson179/CHAT-SOCKET-IO/issues)
  
 
  ![Chat Preview](imgs/home.png)
