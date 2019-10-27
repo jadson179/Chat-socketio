@@ -17,8 +17,8 @@
            <h1>Mensagens</h1>
             <div class="messages"></div>
         <div id="container">
-            <input type="text" id="username" placeholder="Seu nome">
-            <input type="text" id="msg" placeholder="Escreva sua mensagem">
+            <input type="text" id="username" placeholder="Seu nome" required>
+            <input type="text" id="msg" placeholder="Escreva sua mensagem" required>
             <button>Enviar</button>
         </div>
        </div>
@@ -41,14 +41,12 @@
         }
         socket.on('sendAllUserMessage', function(message){
 
-            document.querySelector('.messages').innerHTML += `<div style="text-align: end;"><strong>@${message.author}</strong>: ${message.mensagem}</div>`
+            document.querySelector('.messages').innerHTML += `<div style="text-align: init;"><strong>@${message.author}</strong>: ${message.mensagem}</div>`
         })
 
         function renderMessage(message){
-            document.querySelector('.messages').innerHTML += `<div><strong id="color">@${message.author}</strong>: ${message.mensagem}</div>`
+            document.querySelector('.messages').innerHTML += `<div style="text-align: end;"><strong id="color">@${message.author}</strong>: ${message.mensagem}</div>`
         }
-        
-        
     </script>
 </body>
 </html>
