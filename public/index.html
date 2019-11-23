@@ -5,48 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=IE11">
     <title>Socket IO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="scripts/client.socket.io.js" defer></script>
 </head>
+<body>
         <div id="header">
             <li>Node.JS Chat BETA 1.0.0</li>
             <a href="https://github.com/jadson179"><li>GITHUB</li></a>
             <a href="https://jadsonsantos.com"><li>PORTFOLIO</li></a>
         </div>
        <div id="#chat">
-           <h1>Mensagens</h1>
+           <h1 id="title">Mensagens</h1>
             <div class="messages"></div>
         <div id="container">
-            <input type="text" id="username" placeholder="Seu nome" required>
-            <input type="text" id="msg" placeholder="Escreva sua mensagem" required>
-            <button>Enviar</button>
+            <input type="text" id="username" placeholder="Seu nome" required autofocus>
+            <input type="text" class="mensage" id="mensage" placeholder="Escreva sua mensagem" required>
+            <button id="button">Enviar</button>
         </div>
        </div>
 <body>
-    <script type="text/javascript">
-        let socket = io()
-        let enviar = document.querySelector('button')
-        let username = document.querySelector('#username')
-        let msg = document.querySelector('#msg') 
-        enviar.addEventListener('click', sendMsg)
-
-       function sendMsg(){
-            const objectMessage = {
-                author: username.value,
-                mensagem: msg.value
-            }
-            socket.emit('sendMessage', objectMessage)
-            renderMessage(objectMessage)
-            console.log(objectMessage)
-        }
-        socket.on('sendAllUserMessage', function(message){
-
-            document.querySelector('.messages').innerHTML += `<div style="text-align: init;"><strong>@${message.author}</strong>: ${message.mensagem}</div>`
-        })
-
-        function renderMessage(message){
-            document.querySelector('.messages').innerHTML += `<div style="text-align: end;"><strong id="color">@${message.author}</strong>: ${message.mensagem}</div>`
-        }
-    </script>
 </body>
 </html>

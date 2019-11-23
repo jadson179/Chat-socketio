@@ -16,5 +16,12 @@
     "url": "https://github.com/jadson179/Enigma/issues"
   },
   "homepage": "https://github.com/jadson179/Enigma#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "sparkpost": "^2.1.4"
+  }
 }
