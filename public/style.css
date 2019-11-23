@@ -88,3 +88,7 @@ h1 {
 .color {
   color: #1aa371;
 }
+#title-service {
+  color: red;
+  font-size: 15px;  
+}
